@@ -11,19 +11,35 @@
 </head>
 <body>
     <!-- header -->
-    <div>
+    <div class="container">
         <header class="text-center bg-dark text-light">
             <h1>Weather Dashboard</h1>
         </header>
-        <main class="row">
-            <div class="col-4 text-center">
-                <p>Search for City:</p>
-                <input class="form-control rounded" placeholder="Search" />
-                <button type="button" class="SearchBtn btn-outline-primary"search></button>
+        <main class="row border min-vh-100 no-gutters">
+            <div class="col-4">
+                <div class="border container h-25">
+                    <p>Search for City:</p>
+                    <input class="form-control rounded mt-2" placeholder="Search" />
+                    <button type="button" class="SearchBtn btn-outline-primary w-100 mt-2">Search</button>
+                </div>
+                <div class="border">
+                    <p>local storage cities</p>
+                </div>
             </div>
-            <div class="col-8 text-center">
-                <p>cards go here</p>
+            <div class="col-8">
+                <div class="m-3">
+                    <p>
+                        Todays forecast<br>
+                        temp <br>
+                        humid<br>
+                        wind<br>
+                    </p>
+                </div>
+                <div class="m-3">
+                    <p>5 day forecast:</p>
+                </div>
             </div>
+        
 
         </main>
     </div>
